@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[italian]{babel}
+
+\usepackage{graphicx}
+
+\usepackage{indentfirst}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage{enumitem} 
+
+\newcommand{\virgolette}[1]{``#1''}
+
+\usepackage[margin=1in]{geometry} %Smaller margins
+
+\usepackage{lmodern} %Vector PDF
+
+\usepackage{siunitx}
+
+\usepackage{xcolor}
+
+\usepackage{colortbl}
+
+\usepackage{booktabs}
+
+\usepackage{graphicx}
+\graphicspath{ {../Immagini/} }
+
+\usepackage{wrapfig}
+
+\usepackage{siunitx}
+
+\begin{document}
+	
+	\section{Strumentazione}
+	
+	Qui di seguito sono elencati i pezzi dell'apparato sperimentale usato per portare a termine l'esperimento.
+	\begin{description}[align=left]
+	
+		\item [Ampolla di vetro] usata come ambiente dell'esperimento. L'ampolla, di diametro misurato, conteneva gas idrogeno alla pressione di circa $\SI{E-2}{torr}$, necessario per visualizzare il fascio di elettroni, che, in virtù dell'energia acquistata, ne eccitano gli atomi. Il decadimento sullo stato fondamentale avviene rapidamente ed emette una lunghezza d'onda nella regione tra l'azzurro e il violetto.
+		
+		\item [Due elettrodi] utilizzati per generare la differenza di potenziale necessaria ad accelerare gli elettroni. L'anodo di forma sommariamente conica è forato per permettere il passaggio degli elettroni ed è sagomato in modo tale da formare un fascio di elettroni ben collimato. Il catodo è riscaldato da un \textbf{filamento} percorso da corrente e gli elettroni sono emessi da quest'ultimo per effetto termoelettronico.
+		
+		\item [Due bobine di Helmholtz] attraverso cui passa una corrente di intensità $I$, che produce un campo di induzione magnetica $B _z$. La configurazione delle bobine è tale da produrre un campo altamente uniforme nella regione centrale. Il raggio medio e il numero di spire sono forniti dal costruttore.
+		
+		\item [Specchio] usato per misurare il diametro del fascio di elettroni. Guardando il fascio in modo tale da sovrapporlo alla sua immagine nello specchio si evita infatti l'errore di parallasse.
+		
+		\item [Un voltametro] usato per misurare la differenza di potenziale usata per accelerare gli elettroni.
+		
+		\item [Un amperometro] usato per misurare la corrente delle bobine. In particolare è un tester a 3 cifre.
+		
+		\item [Opportuni trasformatori] utilizzati per regolare le correnti presenti nell'esperimento. Il generatore della tensione anodica non poteva superare i $\SI{300}{V}$.
+		
+		\item [Calibro elettronico] utilizzato per misurare il fascio di elettroni, opportunamente puntato con un mirino.
+		
+		\item[Metro] Utilizzato per misurare le grandezze in gioco, men che il diametro del fascio.
+		
+		\item [Un apparato sperimentale] già costruito composto da due bobine ed una bussola, necessario per misurare la componente orizzontale del campo magnetico terrestre.
+		
+		Ovviamente era presente anche un supporto su cui era montato l'intero apparato, la cui forma tuttavia non dovrebbe inficiare minimamente sul risultato dell'esperimento.
+		
+	\end{description}
+
+
+	\section{Procedura sperimentale}
+	
+	Come prima cosa si è costruito il circuito necessario a far passare una corrente dai parametri conosciuti nelle bobine ed una corrente nel filamento all'interno del cannone di elettroni. La modalità di costruzione del circuito era indicata sul supporto per cui assumiamo una corretta impostazione. Una volta accesi tutti i trasformatori, il voltametro e l'amperometro ci si è portati a una condizione tale da vedere il fascio di elettroni, e si è regolato opportunamente la corrente nelle bobine in modo da far compiere agli elettroni un moto circolare uniforme. Ruotando tutto l'apparato si è potuta dedurre la direzione del campo magnetico terrestre, infatti il diametro del fascio di elettroni era minimo quando il campo terrestre era parallelo ed equiorientato al campo generato dalle bobine e massimo quando questo era parallelo ma orientato in senso opposto. Con questa informazione si poteva ruotare l'apparato in modo tale da avere il campo magnetico delle bobine perpendicolare a quello terrestre. Una volta verificato il corretto funzionamento dell'apparato abbiamo cominciato a prendere le misure.
+	
+	Per ogni misura come prima cosa si regolava la differenza di potenziale applicata al cannone di elettroni. Sono state fatte una dozzina di misure nel range $180 V - 300 V$: sotto i $180 V$ il fascio era poco visibile e per via dei limiti dell'apparato non si potevano superare i $300 V$. Una volta ottenuta la differenza di potenziale desiderata si regolava l'intensità del campo magnetico modificando l'intensità di corrente passante nelle bobine in modo tale da avere un diametro del fascio approssimativamente pari al doppio della distanza del cannone dal centro delle bobine. In questo modo gli elettroni descrivevano una circonferenza con centro sulla retta passante per i centri delle due bobine e l'approssimazione di campo magnetico uniforme era maggiormente soddisfatta. A questo punto si misurava il diametro del fascio, misura con errore maggiore, evitando l'errore di parallasse grazie all'aiuto di uno specchio. Come già accennato si guardava il fascio in modo tale che esso si sovrapponesse alla sua immagine nello specchio e che si sovrapponesse ad entrambi anche il traguardo mobile su cui poi veniva fatta la misura.
+	
+	Dopo la procedura illustrata si era in possesso di tutte le informazioni necessarie per calcolare il rapporto $e / m $. Infatti, trascurando l'energia cinetica iniziale si ha, per conservazione dell'energia, l'equazione $$ \frac{mv^2}{2} = e \Delta V.$$ Il campo magnetico generato dalle bobine sul loro asse vale invece $$ B _z (0) = \mu _0 \frac{8}{5 \sqrt{5}} \cdot \frac{NI}{R_b}$$ dove $N$ è il numero di spire e $R_b$ il suo raggio medio. A meno di un leggero fattore di correzione, considerando il campo magnetico uniforme in tutta l'ampolla pari al campo magnetico presente sull'asse delle bobine si ha che la forza centripeta vale $$\frac{m v^2}{R} = evB_z$$ e, mettendo quest'equazione a sistema con quella della conservazione dell'energia, si ricava $$\frac{e}{m} = \frac{2 \Delta V}{(B _z R)^2}$$ che è la misura desiderata. Per avere una stima migliore del rapporto, come si vedrà in analisi dati, si utilizza questa equazione per una regressione lineare. Come anticipato si può ricavare per via teorica un fattore di correzione del campo magnetico, per ovviare alla sua non uniformità. I valori del fattore di correzione saranno riportati nella sezione dell'analisi dati.
+	
+	Una volta ottenuto un numero di misure sufficienti ed aver verificato che abbiano senso, si ripete l'intera procedura orientando l'asse delle bobine parallelamente al campo magnetico terrestre.
+	
+	Si passa poi alla fase finale dell'esperimento, ossia alla misurazione della componente orizzontale del campo terrestre. Per fare questo si orienta un ago magnetico parallelamente a quest'ultimo e si genera, con delle bobine di raggio e corrente nota un campo magnetico perpendicolare. È intuitivo che maggiore sia la componente orizzontale terrestre maggiore debba essere l'intensità del campo magnetico artificiale per deviare l'ago. La corrente che giunge alle bobine passa attraverso una resistenza che permette una regolazione più fine della corrente entrante. Si misura quindi la corrente necessaria a deflettere l'ago di un angolo $\theta$ e, invertendo la corrente si verifica che l'angolo diventi $-	\theta$. A questo punto il valore della misura si ricava facilmente dall'equazione $$\frac{B_z}{B_t - B_r} = \tan \theta$$ dove $B_t$ è la componente del campo magnetico terrestre mentre $B _z$ e $B_ r$ le componenti del campo magnetico generato dalle bobine, calcolate a partire da un'intensità di corrente pari a $I _0 = \SI{100}{\milli A}$.
+	
+\end{document}
